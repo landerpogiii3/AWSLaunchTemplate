@@ -15,3 +15,10 @@ variable "key_name" {
     type = string
     default = "SingaporeKeyPair"
 }
+
+variable "vpc_security_group_ids" {
+    description = "A list of security group IDs to associate"
+    type = list(string)
+    default = []
+  
+}
